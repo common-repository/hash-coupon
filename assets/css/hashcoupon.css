@@ -1,0 +1,236 @@
+.hash_container{
+    border-radius: 18px;
+    background-color: rgba(255,255,255,0.8);
+    max-width: 100%;
+    width: 89%;
+    margin-top:20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.hash_main{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.hash_main p{
+    font-size: 20px;
+}
+
+.hash_section .title{
+  font-size: 20px;
+  color:#6969b0;
+}
+
+.hash_section label,.hash_section .content{
+    font-size: 16px;
+}
+
+.hash_section label{
+ font-weight: 600;
+}
+
+.hash_whychoose{
+    display:block;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hash_section h1{
+  color:#6969b0;
+}
+.hash_whychoose_container{
+    display: inline-flex;
+}
+
+.hash_whychoose .card{
+    float: left;
+    margin: 10px;
+    border: 0 !important;
+    padding: 40px;
+    box-shadow: rgb(105 105 190 / 52%) 0px 3px 8px;
+    border-radius: 18px;
+    width: 80%;
+    max-width: 90% !important;
+}
+
+.hash_section #app-cover {
+  display: table;
+  width: 600px;
+  margin: 80px auto;
+  counter-reset: button-counter;
+}
+
+.hash_section .row {
+  display: table-row;
+}
+
+.hash_section .toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  width: 200px;
+  height: 140px;
+  box-sizing: border-box;
+}
+
+.hash_section .button-cover {
+  height: 100px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px -8px #c5d6d6;
+  border-radius: 4px;
+}
+
+.hash_section .button-cover:before {
+  counter-increment: button-counter;
+  content: counter(button-counter);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.hash_section .button-cover,
+.hash_section .knobs,
+.hash_section .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hash_section .button {
+  position: relative;
+  top: 50%;
+  height: 36px;
+  margin:  0px auto 0 auto !important;
+  overflow: hidden;
+  border: 0.5px solid #e3e3e3 !important;
+}
+
+.hash_section .button.r,
+.hash_section .button.r .layer {
+  border-radius: 100px;
+}
+
+.hash_section .button.b2 {
+  border-radius: 2px;
+}
+
+.hash_section .hash_checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+  height: 30px !important;
+  min-width: 50px !important;
+}
+
+.hash_section .knobs {
+  z-index: 2;
+}
+
+.hash_section .layer {
+  width: 100%;
+  background-color: #e4e5e514;  /*#ebf7fc;*/
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+
+/* Button 14 */
+.hash_section #button-14 .knobs:before,
+.hash_section #button-14 .knobs:after,
+.hash_section #button-14 .knobs span:before,
+.hash_section #button-14 .knobs span:after {
+ position: absolute;
+ top: 4px;
+ width: 20px;
+ height: 10px;
+ font-size: 10px;
+ font-weight: bold;
+ text-align: center;
+ line-height: 1;
+ padding: 9px 4px;
+ border-radius: 2px;
+ transition: 0.3s ease all;
+}
+
+.hash_section #button-14 .knobs:before,
+.hash_section #button-14 .knobs:after {
+ color: #4e4e4e;
+ z-index: 1;
+}
+
+.hash_section #button-14 .knobs:after {
+ content: "OFF";
+ left: 4px;
+}
+
+.hash_section #button-14 .knobs:before {
+ content: "ON";
+ right: 4px;
+}
+
+.hash_section #button-14 .knobs span {
+ top: 0;
+ left: 0;
+ display: block;
+ width: 100%;
+ height: 100%;
+}
+
+.hash_section #button-14 .knobs span:before {
+ left: 4px;
+ top: -28px;
+ background-color: #eb654b;
+}
+
+.hash_section #button-14 .knobs span:after {
+ top: 4px;
+ left: 39px;
+ background-color: #6969b0;
+}
+
+.hash_section #button-14 .knobs span:before,
+.hash_section #button-14 .knobs span:after {
+ content: "";
+ width: 23px;
+ z-index: 2;
+}
+
+.hash_section #button-14 .hash_checkbox:checked + .knobs span:before {
+ top: 4px;
+}
+
+.hash_section #button-14 .hash_checkbox:checked + .knobs span:after {
+ top: -28px;
+}
+
+.hash_section #button-14 .hash_checkbox:checked ~ .layer {
+ background-color: #e4e5e514;
+}
+
+/*#button-14 .hash_checkbox:checked + .knobs span:before {
+ top: 4px;
+}
+
+#button-14 .hash_checkbox:checked + .knobs span:after {
+ top: -28px;
+}
+
+#button-14 .hash_checkbox:checked ~ .layer {
+ background-color: #fcebeb;
+}*/
